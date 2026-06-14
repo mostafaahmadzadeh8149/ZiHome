@@ -3,12 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server dataBase/db.json --port 10000"
+    "server": "json-server dataBase/db.json --host 0.0.0.0"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.4",
